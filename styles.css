@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player{
+    background: #eeffe0;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #a7f531;
+    box-shadow: 0 10px 20px rgba(83, 255, 26, 0.22);
+}
+
+.song-img{
+    width: 220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 20px rgba(83, 255, 26, 0.22);
+}
+
+.music-player{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p{
+    font-size: 14px;
+    color: #333;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #a7f531;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #a7f531;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 20px rgba(83, 255, 26, 0.22);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #a7f531;
+    box-shadow: 0 10px 20px rgba(83, 255, 26, 0.22);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: #a7f531;
+    color: #fff;
+
+}
+.controls div:nth-child(2):hover{
+
+    background: #66a20d;
+    text-shadow: -2px -2px 10px #fff,
+    2px 2px 10px #fff,
+    0 0 20px #f10,
+    0 0 40px #f10,
+    0 0 60px #f10,
+    0 0 80px #f10,
+    0 0 100px #f10;
+
+    box-shadow: 0 0 5px #fff,
+    inset 0 0 5px #fff,
+    0 0 20px #08f,
+    inset 0 0 20px #08f,
+    0 0 40px #08f,
+    inset 0 0 40px #08f;
+}
